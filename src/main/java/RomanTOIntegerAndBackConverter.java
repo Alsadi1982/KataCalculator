@@ -2,7 +2,7 @@ import java.util.Collections;
 import java.util.NavigableMap;
 import java.util.TreeMap;
 
-public class IntegerConverter {
+public class RomanTOIntegerAndBackConverter {
 
     private static final NavigableMap<Integer, String> units;
     static {
@@ -24,7 +24,7 @@ public class IntegerConverter {
     }
 
     /**
-     * Method IntegerConverter#intToRoman(int number) converts decimal numerals to roman
+     * Method RomanTOIntegerAndBackConverter#intToRoman(int number) converts decimal numerals to roman
      * @param number - decimal numeral for convert
      * @return roman numeral
      */
@@ -42,7 +42,7 @@ public class IntegerConverter {
     }
 
     /**
-     * Method IntegerConverter#romanToInt(int number) converts roman numerals to decimal
+     * Method RomanTOIntegerAndBackConverter#romanToInt(int number) converts roman numerals to decimal
      * if @param number consists decimal numerals, method will throw IllegalArgumentException
      * @param number - roman numeral for convert
      * @return decimal numeral

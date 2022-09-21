@@ -17,8 +17,8 @@ public class RomanCalculator implements Calculator{
             throw new IllegalArgumentException("WARNING: One or both of the operands doesn't consist of Roman numerals!");
         }
 
-        int firstOperandToInt = IntegerConverter.romanToInt(firstOperand);
-        int secondOperandToInt = IntegerConverter.romanToInt(secondOperand);
+        int firstOperandToInt = RomanTOIntegerAndBackConverter.romanToInt(firstOperand);
+        int secondOperandToInt = RomanTOIntegerAndBackConverter.romanToInt(secondOperand);
 
         if ((firstOperandToInt < 1 || firstOperandToInt > 10) || (secondOperandToInt < 1 || secondOperandToInt > 10)){
             throw new IllegalArgumentException("WARNING: The calculator must accept numbers from I to X inclusive!");
@@ -30,6 +30,6 @@ public class RomanCalculator implements Calculator{
             throw new ArithmeticException("WARNING: There are no negative numbers in the Roman system!");
         }
 
-        return IntegerConverter.intToRoman(result);
+        return RomanTOIntegerAndBackConverter.intToRoman(result);
     }
 }
